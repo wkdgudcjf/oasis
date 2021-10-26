@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Oasis - main page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="css/stylesheet_52_1301838816.css" media="all" />
+<link rel="stylesheet" type="text/css"
+	href="css/stylesheet_50_1303205116.css" media="all" />
+<link rel="stylesheet" type="text/css"
+	href="css/stylesheet_51_1301838195.css" media="all" />
+
+<link rel="stylesheet" type="text/css"
+	href="css/jisu.css" media="all" />
+	
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/jquery.cycle.all.min.js"></script>
+<script src="js/jquery.poshytip.min.js"></script>
+
+<link rel="stylesheet" href="css/tip-twitter.css" />
+<script type="text/javascript">
+	function Click()
+	{
+		 	alert("눌림");
+	}
+	$(document).ready(function() {
+
+		$('#searchFriend').poshytip({
+			content : '새로운 친구 찾기',
+			className : 'tip-twitter',
+			showTimeout : 1,
+			alignTo : 'target',
+			alignX : 'center',
+			offsetY : 5,
+			allowTipHover : false,
+			fade : false,
+			slide : false
+
+		});
+		$('#tip-twitter1').poshytip({
+			content : '친구/그룹/Language Buddy',
+			className : 'tip-twitter',
+			showTimeout : 1,
+			alignTo : 'target',
+			alignX : 'center',
+			offsetY : 5,
+			allowTipHover : false,
+			fade : false,
+			slide : false
+
+		});
+
+		$('#tip-twitter1').click(function() {
+			var i = 1;
+			if (i == 1) {
+				//$(this).children('a').slideToggle();
+				$('.hiddenMenu').slideToggle();
+				i = 0;
+			} else {
+				$('.hiddenMenu').addClass("hiddenSub");
+				//$(this).children('a').addClass("hidden");
+				i = 1;
+			}
+		});
+
+	});
+</script>
+</head>
+<body>
+	<div class="headcontainer">
+		<div id="header" class="container_9">
+			<div class="grid_9 header">
+				<div class="grid_2 alpha logo">
+					<a href="mainpage.html"><img src="logo2.png" alt="InCub" /> </a>
+					<div class="homehint">Homepage</div>
+				</div>
+				<div class="grid_3 menu">
+					<ul>
+						<li><a href="mypage.jsp"><span>My page</span> </a></li>
+						<li><a href="friend.html#page-what-we-do"><span>Friend</span>
+						</a>
+						</li>
+						<li><a href="webhard.html"><span>Webhard</span> </a></li>
+					</ul>
+					<div class="hiddenMenu">
+						<a onclick="Click()" class="hiddenSub" id="friend" href="friend.html#friend">Friend</a> <a
+							 onclick="Click()" class="hiddenSub" id="group" href="#friend.html#Group">Group</a> <a
+							 onclick="Click()" class="hiddenSub" id="lb" href="#friend.html#Languagebuddy">Language Buddy</a>
+					</div>
+					
+				</div>
+				<div class="grid_2 social">
+					<ul>
+						<li><a href="message.html"><span>Message</span> </a></li>
+						<li id='searchFriend'><a href="searchFriend.html"><span>Search
+									Friend</span> </a></li>
+					</ul>
+				</div>
+				<div class="grid_1 profile">
+					<img src="main.jpg" />
+
+				</div>
+				<div class="grid_1 subProfile">
+					<a href="mypage.jsp">송중기</a><br /> <a href="#">logout</a>
+				</div>
+
+
+				<div class="grid_2 omega navigation">
+					<a id="nav_next"></a><a id="nav_prev">&nbsp;</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="bodycontainer">
+
+			<div class="mainsection ms-home">
+
+				
+			</div>
+<div class="mainsection ms-what-we-do">
+
+				<div id="friend" name="What we do" class="sectionwall"
+					style="background-image: url(/uploads/images/backgrounds/bg-what-we-do.jpg);">
+					<div class="section container_9">
+						<div class="grid_5 prefix_2 suffix_2">
+							<center>
+							<div class="grid_5 incubparttitle">
+								<h2>searchFriend</h2>
+							</div>
+							</center>
+							<div class="grid_5 prefix_2 suffix_2" style="padding-top:30px;">
+								<input type="text" name="search" class="searchBox"> 
+								</input>
+								<button type="submit" class="find">find</button>
+							</div>
+							
+							</div>
+							</div>
+							</div>
+							</div>
+							</div>
+							</div>
+
+</body>
+</html>

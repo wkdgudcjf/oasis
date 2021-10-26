@@ -1,0 +1,19 @@
+div.grid_5 #intro
+{
+	border-top-width: 4px;
+	border-right-width: 0px;
+	border-bottom-width: 4px;
+	border-left-width: 0px;
+	border-style: solid;
+	
+	border-color: navy;
+	margin-bottom: 20px;
+}
+#name
+{
+	text-align:center;	
+}
+#intro > tr > td
+{
+	padding:10px;
+}

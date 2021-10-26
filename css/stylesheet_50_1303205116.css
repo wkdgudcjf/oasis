@@ -1,0 +1,506 @@
+body {
+	font: 14px/20px 'Times New Roman', Georgia, Palatino,
+		'Palatino Linotype', Times, serif, °íµñ;
+	color: #333;
+	background-color: #c6d9f1;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: underline;
+	font-style: italic;
+	color: #000;
+}
+
+.headcontainer {
+	width: 100%;
+	background-color: #fff;
+	height: 100px;
+}
+
+#header {
+	position: relative;
+	
+}
+.header {
+	height: 100px;
+	width: 100%;
+}
+
+#body {
+	width: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.bodycontainer {
+	width: 5000px;
+}
+
+.mainsection {
+	width: 100%;
+	float: left;
+	min-width: 990px;
+}
+
+
+.content {
+	text-align: center;
+	padding-top: 320px;
+}
+
+.content a:hover,.wwdcontent a:hover,.contactinfo a:hover {
+	background-color: #ffff00;
+}
+
+.wwdcontent .sharebox a:hover {
+	background-color: transparent;
+}
+
+.section {
+	position: relative;
+}
+
+#page-home .content,#page-tedxyouth .content,#page-living-abroad .content
+	{
+	padding-top: 400px;
+}
+
+.wwdcontent {
+	text-align: left;
+	padding-top: 60px;
+}
+
+.wwdcontent h1 {
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: normal;
+	color: #333;
+	padding-bottom: 20px;
+}
+
+.wwdimg {
+	min-height: 150px;
+	height: auto; !
+	important height: 150px;
+}
+
+.logo a {
+	float: left;
+	margin-top: 20px;
+}
+
+.logo .homehint {
+	float: left;
+	margin-top: 45px;
+	margin-left: 22px;
+	font-style: italic;
+	color: #999;
+	display: none;
+}
+
+.menu ul,.social ul {
+	float: left;
+	width: 100%;
+	margin: 40px 0 0 0;
+	padding: 0;
+	line-height: 30px;
+	list-style-type: none;
+}
+
+.menu ul li,.social ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	list-style-type: none;
+}
+
+.menu ul li a {
+	float: left;
+	margin: 0 12px 0 0;
+	padding: 0 7px;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	font-style: normal;
+}
+
+.menu ul li a.activ {
+	background-color: #ffff00;
+}
+
+.social ul li a {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0;
+	line-height: 30px;
+	color: #999;
+	text-decoration: none;
+	font-style: italic;
+}
+.social ul li a:HOVER {
+	background-color: #8efbaa;
+}
+.navigation {
+	padding-top: 47px;
+	line-height: 17px;
+}
+
+#nav_prev {
+	float: right;
+	width: 33px;
+	height: 17px;
+	background: transparent url(/images/nav-left.gif) no-repeat left top;
+	cursor: pointer;
+	margin-right: 22px;
+	text-decoration: none;
+}
+
+#nav_next {
+	float: right;
+	width: 33px;
+	height: 17px;
+	background: transparent url(/images/nav-right.gif) no-repeat left top;
+	cursor: pointer;
+	margin-right: 22px;
+	text-decoration: none;
+}
+
+#nav_prev.inactive {
+	background: transparent url(/images/nav-left-i.gif) no-repeat left top;
+}
+
+#nav_next.inactive {
+	background: transparent url(/images/nav-right-i.gif) no-repeat left top;
+}
+
+.nextpage {
+	height: 80px;
+	background: transparent url(/images/grey-dot.gif) repeat-x left 39px;
+}
+
+.ms-home .nextpage {
+	margin: 40px 0;
+}
+
+.nextpage a {
+	float: right;
+	clear: right;
+	width: 45px;
+	height: 39px;
+	margin-right: 155px;
+	margin-bottom: 1px;
+	background: transparent url(/images/nav-home-banner.gif) no-repeat left
+		top;
+	text-decoration: none;
+}
+
+.nextpage a.up {
+	background: transparent url(/images/nav-up.gif) no-repeat left top;
+}
+
+.nextpage a.down {
+	background: transparent url(/images/nav-down.gif) no-repeat left top;
+}
+
+.nextpage a.nobg {
+	background: transparent none no-repeat left top;
+}
+
+.footer {
+	height: 195px;
+	font-size: 12px;
+	font-style: italic;
+	color: #999;
+	padding-top: 0;
+	text-align: center;
+}
+
+.footer a {
+	font-style: normal;
+	color: #000;
+	text-decoration: underline;
+}
+
+p.logo_anagrama {
+	margin-top: 15px;
+	line-height: 40px;
+	text-align: center;
+}
+
+p.logo_anagrama a {
+	width: 40px;
+	height: 40px;
+}
+
+.footer a.link_anagrama {
+	font-style: italic;
+}
+
+.newsitem {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	position: relative;
+}
+
+.newsitem h1 {
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: normal;
+	color: #333;
+}
+
+.newsitem .newsbody,.newsitem .newsdate {
+	padding-top: 20px;
+}
+
+.newsitem .nextpage,#page-news .nextpage {
+	margin-top: 40px;
+}
+
+.newsitem .newsshare {
+	position: relative;
+}
+
+.sharebox {
+	position: absolute;
+	height: 80px;
+	width: 122px;
+	right: 0;
+	top: -60px;
+	padding: 80px 0;
+	background: transparent url(/images/bg-share.gif) no-repeat left top;
+	text-align: center;
+	font-style: italic;
+}
+
+.wwdcontent .sharebox {
+	top: -60px;
+}
+
+#body .at15t_facebook {
+	background: transparent url(/images/icon-facebook.gif) no-repeat 0 0;
+	width: 23px;
+	height: 23px;
+}
+
+#body .at15t_twitter {
+	background: transparent url(/images/icon-twitter.gif) no-repeat 0 0;
+	width: 23px;
+	height: 23px;
+}
+
+#body .addthis_button_facebook {
+	margin: 15px 5px 0 30px;
+}
+
+#body .addthis_button_twitter {
+	margin: 15px 0 0 5px;
+}
+
+.wwd1 {
+	background: transparent url(/images/wwd-top-line.gif) no-repeat center
+		top;
+	padding-top: 6px;
+	margin-top: 30px;
+}
+
+.wwd2 {
+	border-top: 1px solid #d0d0d0;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.wwd1 div.grid_9,.wwd2 div.grid_9 {
+	margin-top: 40px;
+	background: transparent url(/images/vlines3.gif) repeat-y center top;
+}
+
+.wwd2 div.grid_9 {
+	margin-top: 40px;
+}
+
+.wwd1 div.grid_3,.wwd2 div.grid_3 {
+	text-align: center;
+}
+
+.wwd1 a,.wwd2 a {
+	display: block;
+	width: 100%;
+	height: 60px;
+	padding-top: 180px;
+	text-decoration: none;
+}
+
+.wwd2 a {
+	height: 60px;
+	padding-top: 180px;
+}
+
+.wwd1 a strong,.wwd2 a strong {
+	font-size: 18px;
+}
+
+div.tedx_youth {
+	background: transparent url(/images/icon-tedxyouth.jpg) no-repeat center
+		top;
+}
+
+div.abroad {
+	background: transparent url(/images/icon-abroad.jpg) no-repeat center
+		top;
+}
+
+div.tedx_buc {
+	background: transparent url(/images/icon-tedxbuc.jpg) no-repeat center
+		top;
+}
+
+div.power_home {
+	background: transparent url(/images/icon-power-home.jpg) no-repeat
+		center -20px;
+}
+
+div.night_run {
+	background: transparent url(/images/icon-night-run.jpg) no-repeat center
+		-20px;
+}
+
+div.gscience {
+	background: transparent url(/images/icon-gscience.jpg) no-repeat center
+		-20px;
+}
+
+.incubinfo {
+	padding-top: 45px;
+	margin-top: 55px;
+	border-top: 1px solid #d0d0d0;
+}
+
+.incubinfo .plus {
+	font-style: italic;
+}
+
+.incubparttitle {
+	border-top: 1px solid #d0d0d0;
+	border-bottom: 1px solid #d0d0d0;
+	margin-top: 50px;
+}
+
+.incubparttitle h2 {
+	color: #999;
+	font-size: 40px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.incubpart div.grid_3 {
+	text-align: center;
+}
+
+.incubpart {
+	background: transparent url(/images/vlines3.gif) repeat-y center top;
+	margin-top: 20px;
+	padding: 40px 0 60px 0;
+}
+
+#incubcontact {
+	display: block;
+	position: absolute;
+	top: -6px;
+	width: 100px;
+	height: 20px;
+	padding: 46px 0 54px 0;
+	text-align: center;
+	text-decoration: none;
+	background: transparent url(/images/bg-incub-contact.gif) no-repeat left
+		top;
+}
+
+.contactform .grid_3,.contactform .tmess {
+	margin-top: 20px;
+}
+
+.contactform .grid_3 input {
+	width: 260px;
+	padding: 20px 25px;
+	height: 20px;
+	line-height: 20px;
+	border: 0;
+	margin: 0;
+	font: 14px/20px 'Times New Roman', Georgia, Palatino,
+		'Palatino Linotype', Times, serif;
+	color: #333;
+}
+
+.contactform .sima {
+	float: left;
+	width: 260px;
+	margin-left: 10px;
+	padding: 20px 25px;
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+.contactform .sima select {
+	width: 260px;
+	padding: 0;
+	height: 20px;
+	line-height: 20px;
+	border: 0;
+	margin: 0;
+	font: 14px/20px 'Times New Roman', Georgia, Palatino,
+		'Palatino Linotype', Times, serif;
+	color: #333;
+}
+
+.contactform textarea {
+	width: 920px;
+	padding: 20px 25px;
+	height: 200px;
+	line-height: 20px;
+	border: 0;
+	margin: 0;
+	font: 14px/20px 'Times New Roman', Georgia, Palatino,
+		'Palatino Linotype', Times, serif;
+	color: #333;
+}
+
+.contactform .submit {
+	text-align: center;
+}
+
+.contactform .fbsubmit {
+	width: 133px;
+	height: 80px;
+	background: transparent url(/images/but-send.gif) no-repeat left top;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.contactinfo {
+	float: left;
+	clear: left;
+	padding: 80px 155px 50px 155px;
+	margin: 0 10px;
+	width: 660px;
+	background: transparent url(/images/sep-contact.gif) no-repeat left 55px;
+}
+
+.contactinfo .grid_2 {
+	text-align: center;
+}
+
+.contactinfo a {
+	font-style: italic;
+	text-decoration: underline;
+	color: #000;
+}
+
+.sectionwall {
+	background: transparent none no-repeat center top;
+	width: 100%;
+	min-width: 990px;
+}

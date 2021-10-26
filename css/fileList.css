@@ -1,0 +1,19 @@
+#fileList
+{
+	border-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+	font: 14px/20px 'Times New Roman', Georgia, Palatino,
+		'Palatino Linotype', Times, serif;
+	width: 500px;
+}
+#fileList th
+{
+	border-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+	height: 28px;
+	text-align: center;
+	letter-spacing: -1px;
+	background-color: red;
+}

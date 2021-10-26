@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Validator -->
+	<bean id="loginValidator" class="com.theOasis.validator.LoginValidator" />
+
+	<!-- MessageSource -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource" >
+		<property name="basenames">
+			<list>
+				<value>messages</value>
+			</list>
+		</property>
+		
+	</bean>
+	<!-- HandlerMapping -->
+	<bean id="handlerMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<value>
+				/login.html=loginFormController
+				/logout.html=logoutFormController
+				/mypage.html=myPageController
+				/personal.html=friendPageController
+				/enrollMine.html=addmyBBSItemController
+				/enroll.html=addBBSItemController
+				/deleteBBS.html=deleteBBSItemController
+				/addComment.html=addCommentController
+				/searchFriend.html = searchFriendController
+				/addFriend.html = addFriendFormController
+				/responseAdd.html = responseAddFormController
+				/friend.html = friendFormController
+				/removeFriend.html = removeFriendController
+				/group.html = groupFormController
+				/addGroup.html = addGroupController
+				/responseGroupAdd.html = responseGroupAddController
+				/message.html = messageController
+				/webhard.html = webhardSController
+				
+				/removeGroup.html = removeGroupController
+				/languageBuddy.html = langauageBuddyController
+				/breakLB.html = removeLbController
+				/addLb.html = addLanguageBuddyController
+				/responseLb.html = responseAddLbController
+				/modifyLbProfile.html = modifyLbProfileController
+			</value>
+		</property>
+	</bean>
+
+	<!-- Controller -->
+	<bean id="webhardSController" class="com.theOasis.servlet.WebhardSController" />
+
+	<bean id="loginFormController" class="com.theOasis.server.controller.LoginFormController"
+		p:loginValidator-ref="loginValidator">
+	</bean>
+	<bean id="logoutFormController" class="com.theOasis.server.controller.LogoutFormController">
+	</bean>
+	<bean id="addmyBBSItemController" class="com.theOasis.server.controller.AddmyBBSItemController">
+	</bean>
+	<bean id="addBBSItemController" class="com.theOasis.server.controller.AddBBSItemController">
+	</bean>
+	<bean id="deleteBBSItemController" class="com.theOasis.server.controller.DeleteBBSItemController">
+	</bean>
+	<bean id="myPageController" class="com.theOasis.server.controller.MyPageController">
+	</bean>
+	<bean id="addCommentController" class="com.theOasis.server.controller.AddCommentController">
+	</bean>
+	<bean id="messageController" class="com.theOasis.server.controller.MessageController">
+	</bean>
+	<bean id="friendPageController" class="com.theOasis.server.controller.FriendPageController">
+	</bean>
+	<bean id="joinFormController" class="com.theOasis.server.controller.JoinFormController"
+		>
+	</bean>
+		<bean id="searchFriendController" class="com.theOasis.server.controller.SearchFormController">
+	</bean>
+	<bean id ="addFriendFormController" class="com.theOasis.server.controller.AddFriendFormController">
+	</bean>
+	<bean id ="responseAddFormController" class="com.theOasis.server.controller.ResponseAddFormController">
+	</bean>
+	<bean id = "friendFormController" class="com.theOasis.server.controller.FriendFormController">
+	</bean>
+	<bean id = "removeFriendController" class="com.theOasis.server.controller.RemoveFriendController">
+	</bean>
+		<bean id = "groupFormController" class="com.theOasis.server.controller.GroupFormController">
+	</bean>
+	<bean id = "addGroupController" class="com.theOasis.server.controller.AddGroupController">
+	</bean>
+	<bean id = "responseGroupAddController" class="com.theOasis.server.controller.ResponseGroupAddController">
+	</bean>
+	<bean id = "removeGroupController" class="com.theOasis.server.controller.RemoveGroupController">
+	</bean>
+	<bean id = "langauageBuddyController" class="com.theOasis.server.controller.LanguageBuddyFormController">
+	</bean>
+	<bean id = "removeLbController" class="com.theOasis.server.controller.RemoveLbController">
+	</bean>
+	<bean id = "addLanguageBuddyController" class="com.theOasis.server.controller.AddLanguageBuddyController">
+	</bean>
+	<bean id = "responseAddLbController" class="com.theOasis.server.controller.ResponseAddLbController">
+	</bean>
+	<bean id = "modifyLbProfileController" class="com.theOasis.server.controller.ModifyLbProfileController">
+	</bean>
+	<!-- ViewResolver -->
+	<bean id="internalResourceViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.JstlView</value>
+		</property>
+		<property name="prefix">
+			<value>WEB-INF/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+</beans>

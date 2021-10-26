@@ -1,0 +1,118 @@
+.grid_5.prefix_2.suffix_2 #tb #goodbtn {
+    border:0 none;
+	background:transparent;
+}
+
+.grid_5.prefix_2.suffix_2 #tb {
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 5px;
+	 margin-top: 5px;
+	
+	border-color: black;
+}
+
+.grid3 #group {
+	margin-bottom:0px;
+	position:absolute;
+	}
+
+.grid_5.prefix_2.suffix_2 #tb #badbtn {
+    border:0 none;
+	background:transparent;
+}
+
+.searchBox{
+   background-image:url('magnifying-glass.gif');
+   background-repeat:no-repeat;
+   padding-left:20px;
+ } 
+ 
+.grid_5.prefix_2.suffix_2 #tb #sharebtn {
+    border:0 none;
+	background:transparent;
+}
+
+.dhtmlgoodies_question { /* Styling question */
+	/* Start layout CSS */
+	color: #FFF;
+	font-size: 0.9em;
+	background-color: #317082;
+	width: 430px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding-left: 2px;
+	background-image: url('images/bg_answer.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 20px;
+	/* End layout CSS */
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.dhtmlgoodies_answer { /* Parent box of slide down content */
+	/* Start layout CSS */
+	border: 1px solid #317082;
+	background-color: #E2EBED;
+	width: 530px;
+	/* End layout CSS */
+	visibility: hidden;
+	height: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+.dhtmlgoodies_answer_content { /* Content that is slided down */
+	padding: 1px;
+	font-size: 0.9em;
+	position: relative;
+}
+
+.dhtmlgoodies_question { /* Styling question */
+	/* Start layout CSS */
+	color: #FFF;
+	font-size: 0.9em;
+	background-color: #317082;
+	width: 530px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding-left: 2px;
+	background-image: url('images/bg_answer.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 20px;
+	/* End layout CSS */
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.dhtmlgoodies_answer { /* Parent box of slide down content */
+	/* Start layout CSS */
+	border: 1px solid #317082;
+	background-color: #E2EBED;
+	width: 530px;
+	/* End layout CSS */
+	visibility: hidden;
+	height: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+.dhtmlgoodies_answer_content { /* Content that is slided down */
+	padding: 1px;
+	font-size: 0.9em;
+	position: relative;
+}
+
+
+.tree {
+	height:900px;
+	width: 150px;
+]

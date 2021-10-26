@@ -1,0 +1,345 @@
+/* F12 개발자 도구로 작성. 원본 파일을 정확하게 표현한 것이 아닐 수도 있습니다. */
+img {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+body {
+	background: url("/_t_bg.png") repeat-x rgb(255, 255, 255); margin: 0px; padding: 0px; height: 100%; text-align: center; color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 10pt;
+}
+h1 {
+	font-family: Verdana, sans-serif; font-size: 2em; margin-top: 8px; margin-bottom: 8px;
+}
+a:link {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:visited {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:active {
+	color: rgb(80, 104, 112); text-decoration: underline;
+}
+a:hover {
+	color: rgb(80, 104, 112); text-decoration: underline;
+}
+p {
+	margin: 12px;
+}
+td {
+	font-family: Verdana, sans-serif; font-size: 10pt; white-space: nowrap;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+
+#NavBar {
+	padding: 1px 0px; border: 0px currentColor; width: 100%; color: rgb(240, 240, 240); font-size: 1em; margin-bottom: 6px; float: left; background-color: rgb(24, 48, 64);
+}
+#NavBar a {
+	color: rgb(224, 224, 224);
+}
+#nav-padding {
+	margin: 0px auto; width: 854px;
+}
+#LocationPath {
+	float: left; display: inline;
+}
+#LocationPath {
+	margin-top: 4px; margin-left: 2px;
+}
+#NavButtons {
+	padding-right: 2px; margin-top: 4px; margin-right: 4px; float: right; display: inline;
+}
+#WorkSpace {
+	margin: 0px auto; width: 854px; padding-bottom: 10px;
+}
+#welcome-message {
+	padding: 0px; width: 100%; clear: both; float: left;
+}
+#FileList {
+	padding: 2px; border: 0px currentColor; width: 750px; margin-top: 80px; margin-left: 40px;  position: relative;
+}
+#FileListContainer {
+	width: 100%; 
+	/* margin-left: -292px; float: right; */
+}
+#TaskBar {
+	padding: 0px; width: 280px; margin-top: 6px; float: left; position: relative;
+}
+.section {
+	text-align: left;
+}
+.section .BoxContent {
+	padding: 5px 10px 6px;
+}
+.section .BoxHeader {
+	padding: 4px 0px; font-size: 1em;
+}
+.section#actions {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; background-color: rgb(224, 224, 224);
+}
+.section#actions .BoxHeader {
+	color: rgb(240, 240, 240); background-color: rgb(184, 184, 184);
+}
+.section#actions .BoxContent {
+	font-size: 1em;
+}
+.section#actions .BoxContent li {
+	list-style: none; padding: 4px 9px; text-align: left; border-bottom-color: rgb(184, 184, 184); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.section#actions .BoxContent li.last {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.section#actions .BoxContent a {
+	padding: 3px; display: block;
+}
+.section#upload {
+	background-color: rgb(224, 224, 224);
+}
+.section#upload .BoxHeader {
+	color: rgb(240, 240, 240); background-color: rgb(184, 184, 184);
+}
+.section#upload .BoxContent {
+	padding: 3px 19px;
+}
+#ThumbOpts {
+	padding: 0px; width: 100%; text-align: center; right: 0px; bottom: 0px; position: absolute;
+}
+.UCLabel_Stacked {
+	text-align: left; font-size: 8pt; font-weight: bold;
+}
+.FLCols {
+	margin: 0px; padding: 0px; border: 0px currentColor; width: 100%; border-collapse: collapse; table-layout: fixed;
+}
+#FLHeader {
+	color: rgb(240, 240, 240); font-weight: bold; background-color: rgb(110, 110, 110);
+}
+#FLBTable {
+	background-color: rgb(240, 240, 240);
+}
+#FLBody {
+	border: 0px currentColor; width: 750px; height: 400px; overflow: hidden; overflow-x: auto; overflow-y: auto; background-color: rgb(240, 240, 240);
+}
+.dirlistrow td {
+	vertical-align: middle;
+}
+.dirlistrow img {
+	padding: 0px 2px; vertical-align: middle;
+}
+.dirlistrow input {
+	padding: 0px 2px; vertical-align: middle;
+}
+.FLCols .dl_2 {
+	background-color: rgb(252, 252, 252);
+}
+#FLBody .srch td {
+	overflow: visible; vertical-align: top;
+}
+#FLBody .srch p {
+	margin: 2px 0px 0px;
+}
+#FLBody .srch p.pd {
+	margin: 2px 0px; font-size: 80%; white-space: nowrap;
+}
+
+.FLCols td {
+	width: 210px; text-align: left; overflow: hidden; white-space: normal; word-wrap: break-word; text-wrap: normal;
+}
+#FLHeader.FLCols td
+{
+	width: 210px; text-align: center; overflow: hidden; white-space: normal; word-wrap: break-word; text-wrap: normal;
+}
+.FLCols td + td {
+	width: 120px; text-align: center;
+}
+#FLHeader.FLCols td + td
+{
+	width: 120px; text-align: center;
+}
+.FLCols td + td + td {
+	width: 130px; text-align: center;
+}
+#FLHeader.FLCols td + td + td
+{
+	width: 130px; text-align: center;
+}
+.FLCols td + td + td + td {
+	width: 64px; text-align: center;
+}
+#FLHeader.FLCols td + td + td + td
+{
+	width: 64px; text-align: center;
+}
+.FLCols td + td + td + td + td {
+	width: 64px; text-align: center;
+}
+#FLHeader.FLCols td + td + td + td + td
+{
+	width: 64px; text-align: center;
+}
+#Empty {
+	width: 100%; text-align: center;
+}
+#ThumbTable td {
+	width: 184px; text-align: center; overflow: hidden; padding-top: 8px; padding-bottom: 8px; font-size: 8pt; white-space: normal; word-wrap: break-word; text-wrap: normal;
+}
+#ThumbTable a:hover {
+	text-decoration: none;
+}
+.Sort {
+	padding: 10px; border: 1px solid rgb(24, 48, 64); top: -2px; text-align: center; font-weight: normal; white-space: nowrap; position: absolute; z-index: 10; background-color: rgb(236, 236, 236);
+}
+.FileActionMenu {
+	padding: 4px; border: 1px solid rgb(24, 48, 64); font-weight: normal; white-space: nowrap; position: absolute; z-index: 5; background-color: rgb(236, 236, 236);
+}
+.FileActionMenu img {
+	vertical-align: -2px;
+}
+ul.FileActionMenu {
+	margin: 0px; padding: 0px; text-align: left; list-style-type: none;
+}
+ul.FileActionMenu a {
+	padding: 4px 4px 6px; border: 0px currentColor; height: 1.2em; text-decoration: none; display: block;
+}
+ul.FileActionMenu a:hover {
+	background-color: rgb(224, 224, 224);
+}
+#NoList {
+	margin: 4px auto; position: relative;
+}
+.NoListUploadBox {
+	margin: 8px auto; border: 0px currentColor; width: 370px; padding-bottom: 6px; border-collapse: collapse; background-color: rgb(240, 240, 240);
+}
+.NoListNavBox {
+	margin: 8px auto 6px; border: 0px currentColor; width: 854px; height: 32px; border-collapse: collapse; position: relative; background-color: rgb(240, 240, 240);
+}
+#NoListLocationPath {
+	left: 10px; top: 8px; text-align: left; position: absolute;
+}
+#NoListNavButtons {
+	top: 6px; text-align: right; right: 10px; position: absolute;
+}
+#MultiActionForm {
+	margin: 0px; padding: 0px; border: 0px currentColor;
+}
+#MultiActionButtons {
+	margin: 0px; padding: 6px 0px 0px; border: 0px currentColor;
+}
+.ModalBG {
+	left: 0px; top: 0px; width: 100%; height: 100%; text-align: center; position: absolute; z-index: 100; background-image: url("/WFMGreyOut.png");
+}
+.ModalDialog {
+	margin: 60px auto auto; padding: 0px; border: 1px solid rgb(64, 88, 104); width: 370px; border-collapse: collapse; box-shadow: 6px 6px 6px #000; background-color: rgb(240, 240, 240); -moz-box-shadow: 6px 6px 6px #000; -webkit-box-shadow: 6px 6px 6px #000;
+}
+.UploadDialog {
+	margin: 60px auto auto; padding: 0px; border: 1px solid rgb(64, 88, 104); width: 370px; border-collapse: collapse; box-shadow: 6px 6px 6px #000; background-color: rgb(240, 240, 240); -moz-box-shadow: 6px 6px 6px #000; -webkit-box-shadow: 6px 6px 6px #000;
+}
+.DropBoxDialog {
+	margin: 8px auto auto; padding: 0px; border: 1px solid rgb(64, 88, 104); width: 370px; border-collapse: collapse; box-shadow: 6px 6px 6px #000; background-color: rgb(240, 240, 240); -moz-box-shadow: 6px 6px 6px #000; -webkit-box-shadow: 6px 6px 6px #000;
+}
+.qipBG {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 100; background-image: url("/WFMGreyOut.png");
+}
+.qipDialog {
+	margin: 60px auto auto; padding: 0px; border: 1px solid rgb(64, 88, 104); text-align: left; border-collapse: collapse; box-shadow: 6px 6px 6px #000; background-color: rgb(240, 240, 240); -moz-box-shadow: 6px 6px 6px #000; -webkit-box-shadow: 6px 6px 6px #000;
+}
+.qipClose {
+	left: -16px; top: -16px; position: relative; z-index: 101;
+}
+#qipContent {
+	top: -35px; text-align: center; position: relative;
+}
+#qipPI {
+	border: 1px solid rgb(0, 0, 0); width: 140px; margin-right: auto; margin-left: auto;
+}
+.qipb {
+	margin: 2px; width: 16px;
+}
+.ProgressBar {
+	margin: 10px auto; padding: 0px; border: 1px solid rgb(64, 88, 104); width: 300px; white-space: normal; border-collapse: collapse; background-color: rgb(127, 127, 127);
+}
+.InfoBox {
+	border: 0px currentColor; width: 350px; margin-right: auto; margin-left: auto; border-collapse: collapse; background-color: rgb(240, 240, 240);
+}
+.WideInfoBox {
+	border: 0px currentColor; width: 350px; margin-right: auto; margin-left: auto; border-collapse: collapse; background-color: rgb(240, 240, 240);
+}
+.InfoBox td {
+	margin: 0px; padding: 2px; border: 0px currentColor;
+}
+.BoxHeader {
+	padding: 2px; text-align: center; color: rgb(240, 240, 240); font-weight: bold; background-color: rgb(64, 88, 104);
+}
+.BoxText {
+	padding: 2px; text-align: left;
+}
+.Minimal {
+	padding: 0px; border: 0px currentColor; margin-right: auto; margin-left: auto; border-collapse: collapse;
+}
+.LabelCell {
+	padding: 4px; text-align: right; white-space: nowrap;
+}
+.FieldCell {
+	padding: 4px; text-align: left; white-space: nowrap;
+}
+.FieldCellWithMaxWidth {
+	padding: 4px; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 200px;
+}
+.CenteredCell {
+	text-align: center; padding-right: 20px; padding-left: 20px; white-space: normal;
+}
+.UCTable {
+	margin-top: 8px; margin-right: auto; margin-left: auto;
+}
+.DomainOpt {
+	
+}
+#Footer {
+	margin: 4px auto; width: 100%; bottom: 0px; position: absolute;
+}
+.clear::after {
+	height: 0px; clear: both; font-size: 0px; display: block; visibility: hidden; content: ".";
+}
+.clear {
+	min-height: 1px;
+}
+* html .clear {
+	height: 1px;
+}
+div.FileSelectDiv {
+	margin: 30px auto 10px; width: 100px; white-space: nowrap; position: relative;
+}
+.FileSelectDisplay {
+	padding: 2px 10px; border-radius: 4px; border: 1px solid rgb(184, 184, 184); left: 0px; top: 0px; white-space: nowrap; position: absolute; z-index: 21; background-color: rgb(224, 224, 224);
+}
+.FileSelectInput {
+	width: 100px; text-align: right; filter: alpha(opacity:0); position: relative; z-index: 22; opacity: 0; -moz-opacity: 0;
+}
+.DragToUploadMessWithSel {
+	margin: 10px auto 30px;
+}
+.DragToUploadMessNoSel {
+	margin: 30px auto;
+}
+.DragToUploadMessOr {
+	margin: 10px auto;
+}
+.SmallNote {
+	font-size: 10px; margin-bottom: 4px;
+}
+#ExtraSelectDisplay {
+	font-size: 10px;
+}
+div#ExtraSelectDiv {
+	margin-top: 0px;
+}
+#DS_ExtraSelectDisplay {
+	font-size: 10px;
+}
+div#DS_ExtraSelectDiv {
+	margin-top: 0px;
+}

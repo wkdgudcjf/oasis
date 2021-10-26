@@ -1,0 +1,528 @@
+/* Reset
+
+-------------------------------------------------------------------------------------------------- */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,th,td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: "";
+}
+
+blockquote,q {
+	quotes: "" "";
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+
+ul li,ol li {
+	line-height: normal;
+}
+
+input,select,textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a img {
+	border: none;
+}
+
+img {
+	display: block;
+}
+
+/* Clearfix
+-------------------------------------------------------------------------------------------------- */
+.cfx {
+	min-height: 1%;
+}
+
+.cfx:after {
+	content: '.';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Generic
+-------------------------------------------------------------------------------------------------- */
+html,body {
+	
+	position: relative;
+	height: 100%;
+}
+
+#wrap {
+	min-width: 1000px;
+	max-width: 1400px;
+	position: relative;
+	min-height: 100%;
+	height: 100%;
+	/*height:auto;*/
+	padding: 0;
+	overflow: hidden;
+	background: #333;
+	background-position:center;
+	background-image: url(oasis4.jpg);
+	background-repeat: no-repeat;
+
+}
+
+.ie6 #wrap {
+	margin-bottom: -49px;
+	width: 1000px;
+}
+
+h1 {
+	width: 211px;
+	height: 118px;
+	position: fixed;
+	left: 0;
+	top: 102px;
+	z-index: 10;
+	cursor: pointer;
+	text-indent: -9999em;
+}
+
+h1 span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 118px;
+	background: url('/images/icons/jrdflogo.png') 0 0 no-repeat;
+}
+
+.ie6 h1 {
+	position: absolute;
+}
+
+#background {
+	position: fixed;
+	z-index: 0;
+}
+
+#bgImg {
+	position: fixed;
+	min-width: 1000px;
+	max-width: 1400px;
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.bgGroup {
+	top: 0;
+	left: 0;
+}
+
+#homeSet {
+	z-index: 0;
+	overflow: hidden;
+}
+
+#homeSet img {
+	width: auto !important;
+	height: auto !important;
+}
+
+#subSet {
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.bgGroup img {
+	position: absolute;
+	top: 0;
+	/*width:100%;  /*by Paul Gampel*/
+}
+
+#loader {
+	width: 54px;
+	height: 55px;
+	left: 50%;
+	margin-left: -27px;
+	top: 350px;
+	position: absolute;
+	background: url('/images/icons/ajax-loader.gif') 0 0 no-repeat;
+	display: none;
+}
+
+.article ul {
+	list-style: none;
+	padding: 0 5 0 15px;
+	margin: 25px 0 0 15px;
+}
+
+.article li {
+	padding: 0 27px 0 0;
+}
+
+.ie #background img {
+	width: auto;
+	height: auto;
+}
+
+.ie6 #background {
+	position: absolute;
+}
+
+/* Container
+-------------------------------------------------------------------------------------------------- */
+#container {
+	position: relative;
+	top: 0;
+	height: 100%;
+	float: right;
+	z-index: 1;
+	margin: 0;
+	left: 790px;
+}
+
+.ie6 #container {
+	overflow: visible;
+	zoom: 1;
+}
+
+#inner {
+	min-width: 788px;
+	max-width: 1188px;
+	height: 100%;
+	position: relative;
+}
+
+.ie6 #inner {
+	position: relative;
+	width: 788px;
+	height: 100%;
+	width: 788px;
+}
+
+/* Nav
+	-------------------------------------------------------------------------------------------------- */
+#nav01 {
+	position: absolute;
+	z-index: 20;
+	padding: 180px 0 0; width : 191px;
+	margin-left: -191px;
+	width: 191px;
+}
+
+#nav01 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nav01 li {
+	margin: 0 0 1px;
+}
+
+#nav01 li a {
+	
+}
+
+#nav01 a span {
+	background-color: transparent;
+	background: url('nav03.png') 0 -118px no-repeat;
+	background-clip: border-box;
+	background-origin: padding-box;
+	width: 191px;
+	height: 80px;
+	display: block;
+	text-indent: -9999em;
+}
+
+#nav01 .navStores span {
+	background-position: 0 -118px;
+
+	margin-bottom: 20px;
+}
+
+#nav01 .navProducts span {
+	background-position: -191px -118px;
+}
+
+#nav01 .navStores .on span,#nav01 .navStores a:hover span {
+	background-position: 0 0;
+}
+
+#nav01 .navProducts .on span,#nav01 .navProducts a:hover span {
+	background-position: -191px 0;
+}
+
+}
+.ie6 #nav01 a,.ie7 #nav01 a {
+	zoom: 1;
+}
+
+.iefix #nav01 {
+	position: absolute;
+	left: 0;
+}
+
+/* Content
+	-------------------------------------------------------------------------------------------------- */
+#content {
+	background: #fff;
+	height: 100%;
+	padding: 0px 0 0;
+	float: left;
+	overflow: hidden; /* ? good idea ? */
+}
+
+.ie6 #content {
+	display: inline;
+	zoom: 1;
+	overflow: visible;
+}
+
+/* Level2 */
+#level2 {
+	float: left;
+	padding: 0 0px;
+	width: 500px;
+	min-height: 500px;
+}
+
+#level2 .nav02 {
+	display: none;
+}
+
+
+
+#level2 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#level2 li {
+	overflow: hidden;
+	margin: 0 0 1px;
+}
+
+.ie6 #level2 li,.ie7 #level2 li {
+	margin-bottom: -2px;
+}
+
+#level2 a {
+	display: block;
+	color: #95958f;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	height: 118px;
+	padding: 0 0 0 193px;
+}
+
+#level2 .image {
+	float: left;
+	display: block;
+	width: 178px;
+	height: 118px;
+	overflow: hidden;
+	margin: 0 15px 0 0;
+	cursor: pointer;
+	position: relative;
+	margin-left: -193px;
+}
+
+#level2 .arrow {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	margin-left: -23px;
+	font-size: 1.083em;
+	color: #fff;
+	padding: 8px 6px 8px 25px;
+	background-color: #fff;
+	background-image: url('logo.png');
+	background-position: 8px -25px;
+	background-repeat: no-repeat;
+}
+
+#level2 a:hover .arrow {
+	bottom: -4px;
+	background-position: 8px 9px;
+}
+
+.ie7 #level2 .arrow {
+	background-position: 8px -26px;
+}
+
+.iefix #level2 a:hover .arrow {
+	background-position: 8px 8px;
+}
+
+.ie6 #level2 .image {
+	display: inline;
+}
+
+.ie6 #level2 a:hover .arrow {
+	bottom: 0;
+}
+
+#level2 #products a {
+	height: 48px;
+}
+
+#level2 .title,#level2 .desc {
+	display: block;
+	width: 150px;
+	float: left;
+	cursor: pointer;
+}
+
+#level2 .title {
+	color: #bcbcb9;
+	font-size: 1.42em;
+	margin: 0 0 7px;
+}
+
+#level2 .cfn .title {
+	margin-top: 19px;
+}
+
+#level2 .desc {
+	line-height: 1.33;
+}
+
+#level2 a:hover .image,#level2 .open {
+	border: 4px solid #b8231a;
+	width: 170px;
+	height: 110px;
+}
+
+#level2 a:hover img,#level2 .over img {
+	position: relative;
+	top: -122px;
+	left: -4px;
+}
+
+#level2 a:hover .arrow {
+	background-color: #b8231a;
+}
+
+#level2 a:hover .desc {
+	color: #b8231a;
+}
+
+#level2 .on .title,#level2 .on .desc {
+	color: #b8231a;
+}
+
+#level2 .cfn .title {
+	width: auto;
+	height: auto;
+	text-indent: 0px;
+	background: none;
+}
+
+#level2 a:hover strong,#level2 a:hover .desc {
+	color: #b8231a;
+}
+
+#level2 #n04s04 .image {
+	border-color: #bcbcb9;
+}
+
+#level2 #n04s04 .arrow {
+	background-color: #bcbcb9;
+}
+
+#level2 #n04s04 a:hover .desc {
+	color: #95958f;
+}
+
+#level2 #n04s04 .desc {
+	color: #95958f;
+}
+
+.ie6 #level2 {
+	
+}
+
+
+/* Footer
+-------------------------------------------------------------------------------------------------- */
+#footer {
+	background: #2f3024 url('footer.png') 100% 0 no-repeat;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 49px;
+	max-width: 1400px;
+	font-weight: bold;
+	color: #;
+	z-index: 90;
+}
+
+#footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 19px 0 0 15px;
+}
+
+#footer li {
+	float: left;
+	padding: 0 7px 0 0;
+}
+
+#footer li span {
+	display: block;
+}
+
+#footer li a {
+	display: block;
+	color: #7d7f71;
+	text-decoration: none;
+	padding: 0 0 0 11px;
+	background: url('/images/icons/footerSep.gif') 0 1px no-repeat;
+}
+
+#footer li a:hover {
+	color: #fff;
+}
+
+.ie6 #footer {
+	position: relative;
+	bottom: auto;
+	width: 1000px;
+}
